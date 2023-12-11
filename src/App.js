@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Calculator from './Calculator';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Calculator />
+
+      <div className="personal-info">
+          <h2>Adnane Bakkou</h2>
+          <p>Niveau: 4IIR G5</p>
+          <p>École: EMSI Maarif</p>
+          <a href="https://bakkou.ma" target="_blank" rel="noopener noreferrer">Site Web: bakkou.ma</a>
+      </div>
     </div>
   );
 }
+
+
 
 export default App;
